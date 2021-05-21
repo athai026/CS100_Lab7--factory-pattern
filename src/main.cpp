@@ -21,6 +21,7 @@ int main(int argc, char** argv) {
         cout << "answer: " << output->evaluate() << endl;
     }
     cout << endl;
+    delete f;
 
     return 0;
 }
