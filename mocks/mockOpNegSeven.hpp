@@ -1,7 +1,7 @@
 #ifndef __MOCK_OP_NEG_SEVEN__
 #define __MOCK_OP_NEG_SEVEN__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockOpNegSeven : public Base {
     public: 

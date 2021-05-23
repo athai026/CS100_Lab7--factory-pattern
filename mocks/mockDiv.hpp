@@ -1,7 +1,7 @@
 #ifndef __MOCK_DIV__
 #define __MOCK_DIV__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockDiv : public Base {
     public: 

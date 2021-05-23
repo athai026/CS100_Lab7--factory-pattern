@@ -1,7 +1,7 @@
 #ifndef __MOCK_OP_ZERO__
 #define __MOCK_OP_ZERO__
 
-#include "../base.hpp" 
+#include "../src/base.hpp" 
 
 class mockOpZero : public Base {
     public: 

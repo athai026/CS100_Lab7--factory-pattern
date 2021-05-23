@@ -1,7 +1,7 @@
 #ifndef __MOCK_MULT__
 #define __MOCK_MULT__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockMult : public Base {
     public: 

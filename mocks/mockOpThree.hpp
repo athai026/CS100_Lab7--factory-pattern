@@ -1,7 +1,7 @@
 #ifndef __MOCK_OP_THREE__
 #define __MOCK_OP_THREE__
 
-#include "../base.hpp" 
+#include "../src/base.hpp" 
 
 class mockOpThree : public Base {
     public: 

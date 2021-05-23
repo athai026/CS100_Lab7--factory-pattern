@@ -1,7 +1,7 @@
 #ifndef __MOCK_ADD__
 #define __MOCK_ADD__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockAdd : public Base {
     public: 

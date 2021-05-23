@@ -1,7 +1,7 @@
 #ifndef __MOCK_OP_TEN__
 #define __MOCK_OP_TEN__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockOpTen : public Base {
     public: 

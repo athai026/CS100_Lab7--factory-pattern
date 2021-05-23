@@ -1,7 +1,7 @@
 #ifndef __MOCK_POW__
 #define __MOCK_POW__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockPow : public Base {
     public: 

@@ -1,7 +1,7 @@
 #ifndef __MOCK_SUB__
 #define __MOCK_SUB__
 
-#include "../base.hpp"
+#include "../src/base.hpp"
 
 class mockSub : public Base {
     public:
