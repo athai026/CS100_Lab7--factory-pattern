@@ -100,7 +100,7 @@ TEST(FactoryTest, AddError) {
 
 TEST(FactoryTest, IncompleteError) {
 	Factory test;
-	char* args[]={"./calculator",3","+"};
+	char* args[]={"./calculator","3","+"};
 	Base* op=test.parse(args,3);
 	EXPECT_EQ(test.parse(args,3), nullptr);
 }
@@ -108,7 +108,7 @@ TEST(FactoryTest, IncompleteError) {
 TEST(FactoryTest, GibberishError) {
 	Factory test;
 	char* args[]={"./calculator","cs100","makes","me","cry"};
-	Base* op=test.parse(args5);
+	Base* op=test.parse(args,5);
 	EXPECT_EQ(test.parse(args,5), nullptr);
 }
 
