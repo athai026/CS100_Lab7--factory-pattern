@@ -8,7 +8,7 @@
 #include "div_test.hpp"
 #include "pow_test.hpp"
 #include "mixed_test.hpp"
-
+#include "factory_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
