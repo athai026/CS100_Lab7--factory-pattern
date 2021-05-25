@@ -60,7 +60,7 @@ TEST(FactoryTest, AddSub) {
 	Factory test;
 	char* args[]={"./calculator","3","+","4","-","5"};
 	Base* op=test.parse(args,6);
-	string result = "(3+4-5)";
+	string result = "((3+4)-5)";
 	EXPECT_DOUBLE_EQ(op->evaluate(),2);
 	EXPECT_EQ(op->stringify(), result);
 }
@@ -69,7 +69,7 @@ TEST(FactoryTest, MultAdd) {
 	Factory test;
 	char* args[]={"./calculator","3","*","4","+","2"};
 	Base* op=test.parse(args,6);
-	string result = "(3*4+2)";
+	string result = "((3*4)+2)";
 	EXPECT_DOUBLE_EQ(op->evaluate(),14);
 	EXPECT_EQ(op->stringify(), result);
 }
@@ -79,7 +79,7 @@ TEST(FactoryTest, MultDiv) {
 	Factory test;
 	char* args[]={"./calculator","3","*","4","/","3"};
 	Base* op=test.parse(args,6);
-	string result = "(3*4/3)";
+	string result = "((3*4)/3)";
 	EXPECT_DOUBLE_EQ(op->evaluate(),4);
 	EXPECT_EQ(op->stringify(), result);
 }
@@ -88,28 +88,28 @@ TEST(FactoryTest, MultAddError) {
 	Factory test;
 	char* args[]={"./calculator","3","*","+","4"};
 	Base* op=test.parse(args,5);
-	EXPECT_EQ(<fctcall>, nullptr<or 0>);
+	EXPECT_EQ(test.parse(args,5), nullptr);
 }
 
 TEST(FactoryTest, AddError) {
 	Factory test;
 	char* args[]={"./calculator","a","+","4"};
 	Base* op=test.parse(args,4);
-	EXPECT_EQ(<fctcall>, nullptr<or 0>);
+	EXPECT_EQ(test.parse(args,4), nullptr);
 }
 
 TEST(FactoryTest, IncompleteError) {
 	Factory test;
 	char* args[]={"./calculator",3","+"};
 	Base* op=test.parse(args,3);
-	EXPECT_EQ(<fctcall>, nullptr<or 0>);
+	EXPECT_EQ(test.parse(args,3), nullptr);
 }
 
 TEST(FactoryTest, GibberishError) {
 	Factory test;
 	char* args[]={"./calculator","cs100","makes","me","cry"};
 	Base* op=test.parse(args5);
-	EXPECT_EQ(<fctcall>, nullptr<or 0>);
+	EXPECT_EQ(test.parse(args,5), nullptr);
 }
 
 #endif //__FACTORY_TEST_HPP__
